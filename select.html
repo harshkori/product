@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+    
+    button{
+	padding: 12px;
+	background-color: red;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+    margin-top: 100px;
+}
+div.box{
+    height:400px;
+    width: 400px;
+    background-color: red;
+    margin:auto;
+    margin-top: 10px;
+
+}
+
+</style>  
+</head>
+
+
+  <body>
+      <div class="box"></div>
+<center>    <span>
+   
+        <button  type='submit' style='padding:5px;height:40px;' class='plus-btn'
+        
+        onclick='f()' name='button'>
++       
+</button> 
+
+
+<input type='text' id='l'  value='0' style='width:14px;padding:1px;height:37px;width:20px;text-align:center'> 
+
+<button class='minus-btn' style='padding:5.9px;font-weight:bold;font-size:15px;height:40px'  type='submit' name='button' onclick='k()'>
+-          </button></span>  </center>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+  <script type="text/javascript">
+  
+    $('.minus-btn').on('click', function(e) {
+      e.preventDefault();
+      var $this = $(this);
+      var $input = $this.closest('span').find('input');
+      var value = parseInt($input.val());
+
+      if (value > 1) {
+        value = value - 1;
+      } else {
+        value = 0;
+      }
+
+      $input.val(value);
+
+    });
+
+    $('.plus-btn').on('click', function(e) {
+      e.preventDefault();
+      var $this = $(this);
+      var $input = $this.closest('span').find('input');
+      var value = parseInt($input.val());
+
+      if (value < 100) {
+        value = value + 1;
+      } else {
+        value =100;
+      }
+
+      $input.val(value);
+    });
+
+    $('.like-btn').on('click', function() {
+      $(this).toggleClass('is-active');
+    });
+  </script>
+
+
+</html>
