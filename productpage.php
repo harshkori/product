@@ -147,7 +147,8 @@ margin-left:-50px;
 @media screen and (max-width: 1200px) {
   .column {
     -ms-flex: 50%;
-    flex: 50%;
+    flex: 20%;
+
     max-width: 50%;
   }
 }
