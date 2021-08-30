@@ -126,9 +126,10 @@ a{
 }
 .gif{
   float:right;
-  height:100px;
-  width:100px;
-
+  height:200px;
+  width:200px;
+  top:0px;
+margin-left:-50px;
   position: absolute;
 
 }
@@ -161,13 +162,13 @@ a{
   .carticon{
     font-size:20px;
   }
-.title{
-    font-size:40px;
-  }
   .gif
   {
-    height:50px;
-    width:50px;
+    height:180px;
+    width:180px;
+  }
+  .title{
+    font-size:40px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -176,8 +177,9 @@ a{
   }
   .gif
   {
-    height:45px;
-    width:45px;
+    height:140px;
+    width:140px;
+    top:25px;
   }
 }
 div.cartb{
@@ -202,10 +204,10 @@ margin-top:10px;
 
 <!-- Header -->
 
-<div style="background-color:white;font-family:cursive;box-shadow:0px 0px 10px red;margin:6px">
+<div style="background-color:wheat;font-family:cursive;box-shadow:0px 0px 10px red;margin:6px">
 <a href="cartt.php" class="carticon"><i class="fa fa-shopping-cart"></i> Cart</a>
 
-<h2 ><label class="title">Shopzone</label><img src="images/ecommerce-cart-gif.gif" class="gif">
+<h2 ><label class="title">Shopzone</label><img src="images/ee.gif" class="gif">
 
     </h2>
     <center><input type="text" id="myInput" placeholder="Search for names.." onkeyup="myfunction()" title="Type in a name">
