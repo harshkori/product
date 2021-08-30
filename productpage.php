@@ -200,7 +200,7 @@ margin-top:10px;
 
 <!-- Header -->
 
-<div style="background-color:white;font-family:cursive">
+<div style="background-color:white;font-family:cursive;box-shadow:0px 0px 10px red;margin:6px">
 <a href="cartt.php" class="carticon"><i class="fa fa-shopping-cart"></i> Cart</a>
 
 <h2 ><label class="title">Shopzone</label><img src="images/ecommerce-cart-gif.gif" class="gif">
