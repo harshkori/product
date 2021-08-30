@@ -40,7 +40,8 @@ body {
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
-  padding: 0 40px;
+    padding: 0 6px;
+
 }
 
 /* Create four equal columns that sits next to each other */
