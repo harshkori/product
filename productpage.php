@@ -161,6 +161,9 @@ a{
   .carticon{
     font-size:20px;
   }
+.title{
+    font-size:40px;
+  }
   .gif
   {
     height:50px;
