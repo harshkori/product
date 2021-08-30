@@ -187,7 +187,6 @@ margin-top:10px;
 
 }
 #m{
-  margin:20px;
   background-color:wheat;
 
 }
